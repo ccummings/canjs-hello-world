@@ -1,0 +1,31 @@
+{
+	"name": "canjs-hello-world",
+	"version": "1.0.0",
+	
+		"author": {
+			"name": "Curtis Cummings",
+			"email": "curtis@curtiscummings.me",
+			"url": "https://github.com/ccummings"
+		},
+		"repository": {
+			"type": "git",
+			"url": "git://github.com/ccummings/canjs-hello-world.git"
+		},
+	
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://opensource.org/licenses/mit-license.php"
+		}
+	],
+	"ignore": [
+		".jshintrc",
+		"bower_components"
+	],
+	"devDependencies": {
+		"canjs": "~2.0.6",
+		"requirejs": "~2.1.11",
+		"jquery": "*",
+		"qunit": "1.10.x"
+	}
+}

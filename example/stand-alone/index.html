@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>hello-world - Stand alone usage</title>
+</head>
+
+<body>
+	<!-- Demo DOM goes here -->
+	<script src="../../bower_components/jquery/dist/jquery.js"></script>
+	<script src="../../bower_components/canjs/can.jquery.js"></script>
+	<script src="../../src/canjs-hello-world.js"></script>
+	<script>
+		(function(window, can, undefined){
+			console.log(can.hello());
+		}(this, can));
+	</script>
+	</body>
+</html>

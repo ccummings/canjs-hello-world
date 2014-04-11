@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>hello-world - AMD usage</title>
+</head>
+
+<body>
+	<!-- Demo DOM goes here -->
+	<script src="../../bower_components/requirejs/require.js"></script>
+	<script>
+		requirejs.config({
+			"baseUrl": "../../",
+			"map": {
+				"*": {
+					"jquery/jquery.js": "jquery",
+					"can/util/util.js": "can/util/jquery/jquery.js"
+				}
+			},
+			"paths": {
+				"jquery": "bower_components/jquery/dist/jquery",
+				"can": "bower_components/canjs/amd/can",
+				"canjs-hello-world": "src/canjs-hello-world"
+			},
+			"shim": {
+				"exports": "jquery"
+			}
+		});
+		
+		require(['can', 'canjs-hello-world'], function(can) {
+			console.log(can.hello());
+		});
+	</script>
+	</body>
+</html>

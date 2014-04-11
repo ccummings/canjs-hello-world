@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>hello-world - Steal Usage</title>
+</head>
+
+<body>
+	<!-- Demo DOM goes here -->
+	<script src="steal/steal.js"></script>
+	<script>
+		steal('can', 'src/canjs-hello-world.js', function(can) {
+			console.log(can.hello());
+		});
+	</script>
+	</body>
+</html>
